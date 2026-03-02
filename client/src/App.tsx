@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import CursorSparkles from './components/CursorSparkles';
 
 // Lazy load the case study page
 const ProjectCaseStudy = React.lazy(() => import('./pages/ProjectCaseStudy'));
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <div className="bg-dark-bg min-h-screen text-gray-200 selection:bg-white/20 flex flex-col">
+        <CursorSparkles />
         <Navbar />
 
         <div className="flex-grow">
