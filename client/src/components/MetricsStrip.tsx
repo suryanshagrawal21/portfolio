@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 const MetricsStrip = () => {
     const metrics = [
-        { label: "LeetCode Profile", value: "300+ Solved", icon: "fas fa-code", link: "https://leetcode.com/u/suryanshagrawal21/" },
-        { label: "GitHub Profile", value: "1000+ Commits", icon: "fab fa-github", link: "https://github.com/suryanshagrawal21" },
-        { label: "Full Stack Projects", value: "5+ Built", icon: "fas fa-layer-group", link: null },
+        { label: "Data Structures & Algorithms", value: "Active Problem Solver", icon: "fas fa-code", link: "https://leetcode.com/u/suryanshagrawal21/" },
+        { label: "Version Control & Open Source", value: "Consistent Contributor", icon: "fab fa-github", link: "https://github.com/suryanshagrawal21" },
+        { label: "End-to-End Applications", value: "Full Stack Architect", icon: "fas fa-layer-group", link: null },
     ];
 
     return (
@@ -13,12 +13,12 @@ const MetricsStrip = () => {
                 {metrics.map((metric, index) => {
                     const CardContent = (
                         <div className="flex items-center gap-4 group cursor-pointer hover:opacity-80 transition-opacity">
-                            <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                            <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors shrink-0">
                                 <i className={`${metric.icon} text-xl text-blue-400`}></i>
                             </div>
                             <div>
-                                <h4 className="text-2xl font-bold text-white tracking-tight">{metric.value}</h4>
-                                <p className="text-sm font-mono text-gray-500 uppercase tracking-wider">{metric.label}</p>
+                                <h4 className="text-xl sm:text-2xl font-bold text-white tracking-tight">{metric.value}</h4>
+                                <p className="text-xs sm:text-sm font-mono text-gray-500 uppercase tracking-wider">{metric.label}</p>
                             </div>
                         </div>
                     );
