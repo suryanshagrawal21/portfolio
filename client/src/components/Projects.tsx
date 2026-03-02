@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import SectionHeading from './ui/SectionHeading';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, ArrowRight } from 'lucide-react';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Projects = () => {
     return (
@@ -57,14 +58,9 @@ const Projects = () => {
                                     </h3>
 
                                     <div className="flex gap-4">
-                                        <a href={project.githubLink} target="_blank" rel="noreferrer" className="flex items-center gap-2 font-mono text-sm text-gray-400 hover:text-white transition-colors bg-white/5 px-4 py-2 rounded border border-white/10 hover:bg-white/10">
-                                            <Github size={16} /> Source Code
-                                        </a>
-                                        {project.liveLink !== "#" && (
-                                            <a href={project.liveLink} target="_blank" rel="noreferrer" className="flex items-center gap-2 font-mono text-sm text-gray-400 hover:text-white transition-colors bg-white/5 px-4 py-2 rounded border border-white/10 hover:bg-white/10">
-                                                <ExternalLink size={16} /> Live Demo
-                                            </a>
-                                        )}
+                                        <RouterLink to={`/projects/${project.id}`} className="flex items-center gap-2 font-mono text-sm text-white bg-blue-600 px-6 py-2.5 rounded-lg border border-blue-500/50 hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/20">
+                                            Deep Dive <ArrowRight size={16} />
+                                        </RouterLink>
                                     </div>
                                 </div>
 

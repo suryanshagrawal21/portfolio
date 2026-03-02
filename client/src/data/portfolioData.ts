@@ -1,4 +1,5 @@
 export interface Project {
+    id: string;
     title: string;
     role: string;
     description: string;
@@ -149,6 +150,7 @@ export const portfolioData = {
 
     projects: [
         {
+            id: "ipl-score-prediction",
             title: "AI-Powered IPL Score Prediction Engine",
             role: "Lead Machine Learning Engineer",
             description: "A robust predictive engine leveraging historical sports data to forecast match outcomes. Built to handle large datasets and expose predictions via a streamlined interface.",
@@ -160,6 +162,7 @@ export const portfolioData = {
             liveLink: "#"
         },
         {
+            id: "movie-ticket-system",
             title: "Enterprise Movie Ticketing System",
             role: "Full Stack Architect",
             description: "A comprehensive booking platform handling high-concurrency reservations, complex relational data, and secure user sessions.",
@@ -171,6 +174,7 @@ export const portfolioData = {
             liveLink: "#"
         },
         {
+            id: "intelligent-resume-screening",
             title: "Intelligent AI Resume Screening Service",
             role: "AI & Backend Developer",
             description: "An automated NLP service designed to ingest, parse, and semantically score candidate resumes against specific job descriptions.",
