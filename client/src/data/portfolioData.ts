@@ -43,7 +43,7 @@ export const portfolioData = {
     personalInfo: {
         name: "Suryansh Agrawal",
         title: "Software Engineer | Architecting Scalable Systems",
-        email: "sa4506@srmist.edu.in",
+        email: "suryanshagrawal54@gmail.com",
         linkedin: "https://www.linkedin.com/in/suryansh-agrawal-b43821283",
         github: "https://github.com/suryanshagrawal21",
         aboutPara1: "I am a full-stack software engineer specializing in the MERN stack and AI/ML data processing pipelines. I thrive on architecting robust backend infrastructures and delivering seamless, highly interactive frontend user experiences.",
