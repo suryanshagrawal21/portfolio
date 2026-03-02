@@ -2,19 +2,19 @@
 
 /* CSS Variables - Modern 2026 Palette */
 :root {
-    --primary-color: #64ffda;
+    --primary-color: #ffffff;
     /* Teal Accent */
-    --secondary-color: #8892b0;
+    --secondary-color: #bbbbbb;
     /* Slate */
-    --dark-bg: #0a192f;
+    --dark-bg: #000000;
     /* Deep Navy */
-    --card-bg: rgba(17, 34, 64, 0.7);
+    --card-bg: rgba(24, 24, 24, 0.7);
     /* Glass-morphic Card */
-    --text-color: #ccd6f6;
+    --text-color: #f2f2f2;
     /* Light Slate */
-    --text-light: #a8b2d1;
+    --text-light: #a3a3a3;
     /* Lighter Slate */
-    --border-color: rgba(100, 255, 218, 0.1);
+    --border-color: rgba(255, 255, 255, 0.15);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -50,7 +50,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(12px);
     padding: 1.2rem 0;
     z-index: 1000;
@@ -163,7 +163,7 @@ body {
     font-size: 4rem;
     /* Slightly smaller for elegance */
     font-weight: 600;
-    color: #e6f1ff;
+    color: #ffffff;
     margin: 0;
     line-height: 1.1;
     letter-spacing: -1px;
@@ -213,7 +213,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: rgba(100, 255, 218, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
 
@@ -225,12 +225,22 @@ body {
 /* Keeping buttons simple */
 .btn-outline {
     background: transparent;
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn-outline:hover {
-    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-text {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-color);
+}
+
+.btn-text:hover {
     color: var(--primary-color);
 }
 
@@ -267,7 +277,7 @@ body {
     height: auto;
     max-width: 350px;
     border-radius: 4px;
-    filter: grayscale(100%) contrast(1.1);
+    filter: grayscale(100%) contrast(1.2);
     /* Stylized B&W */
     transition: var(--transition);
     display: block;
@@ -290,7 +300,7 @@ body {
 .section-title {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #e6f1ff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -317,7 +327,7 @@ body {
     display: block;
     width: 200px;
     height: 1px;
-    background-color: #233554;
+    background-color: rgba(255, 255, 255, 0.2);
     margin-left: 20px;
     position: relative;
     top: 2px;
@@ -339,7 +349,7 @@ body {
 
 .glass-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    box-shadow: 0 10px 30px -15px rgba(255,255,255,0.05);
     border-color: var(--primary-color);
 }
 
@@ -380,15 +390,18 @@ body {
 }
 
 .skill-tag {
-    background: rgba(17, 34, 64, 0.8);
+    background: rgba(24, 24, 24, 0.8);
     color: var(--primary-color);
-    padding: 6px 14px;
+    padding: 8px 16px;
     border-radius: 4px;
     font-size: 0.85rem;
     font-family: 'Fira Code', monospace;
     margin: 0;
     transition: var(--transition);
-    border: 1px solid transparent;
+    border: 1px solid var(--border-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .skill-tag::before {
@@ -397,7 +410,7 @@ body {
 }
 
 .skill-tag:hover {
-    background: rgba(100, 255, 218, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-color: var(--primary-color);
     transform: translateY(-2px);
 }
@@ -425,7 +438,7 @@ body {
 }
 
 .experience-card h3 {
-    color: #e6f1ff;
+    color: #ffffff;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -464,7 +477,7 @@ body {
 
 .cert-card h3 {
     font-size: 1.1rem;
-    color: #e6f1ff;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
@@ -505,12 +518,12 @@ body {
 
 .project-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 20px 30px -10px rgba(2, 12, 27, 0.7);
-    border-color: rgba(100, 255, 218, 0.3);
+    box-shadow: 0 10px 30px -15px rgba(255,255,255,0.05);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .project-card h3 {
-    color: #e6f1ff;
+    color: #ffffff;
     font-size: 1.35rem;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -530,7 +543,7 @@ body {
 
 .key-learning {
     font-size: 0.85rem !important;
-    background: rgba(100, 255, 218, 0.05);
+    background: rgba(255, 255, 255, 0.05);
     padding: 10px;
     border-radius: 4px;
     border-left: 3px solid var(--primary-color);
@@ -568,7 +581,7 @@ body {
 
 .project-link {
     padding: 0;
-    color: #e6f1ff;
+    color: #ffffff;
     font-size: 1.2rem;
     /* Icons larger */
     margin: 0;
@@ -630,7 +643,7 @@ body {
     border-color: var(--primary-color);
     color: var(--primary-color);
     transform: translateY(-3px);
-    background: rgba(100, 255, 218, 0.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .social-btn i {
@@ -799,7 +812,7 @@ body {
 
 .edu-details h3 {
     font-size: 1.3rem;
-    color: #e6f1ff;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
