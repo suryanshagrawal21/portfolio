@@ -4,7 +4,7 @@ const MetricsStrip = () => {
     const metrics = [
         { label: "Data Structures & Algorithms", value: "Active Problem Solver", icon: "fas fa-code", link: "https://leetcode.com/u/suryanshagrawal21/" },
         { label: "Version Control & Open Source", value: "Consistent Contributor", icon: "fab fa-github", link: "https://github.com/suryanshagrawal21" },
-        { label: "End-to-End Applications", value: "Full Stack Architect", icon: "fas fa-layer-group", link: null },
+        { label: "End-to-End Applications", value: "Full Stack Architect", icon: "fas fa-layer-group", link: "https://github.com/suryanshagrawal21?tab=repositories" },
     ];
 
     return (

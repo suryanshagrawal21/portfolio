@@ -10,7 +10,7 @@ const CursorSparkles = () => {
         if (!ctx) return;
 
         let particles: { x: number, y: number, size: number, speedX: number, speedY: number, life: number }[] = [];
-        let mouse = { x: -100, y: -100 };
+        const mouse = { x: -100, y: -100 };
         let animationFrameId: number;
 
         const resize = () => {

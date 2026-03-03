@@ -3,6 +3,7 @@ import SectionHeading from './ui/SectionHeading';
 
 const Architecture = () => {
     // Animation definition for SVG path drawing
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const draw: any = {
         hidden: { pathLength: 0, opacity: 0 },
         visible: (i: number) => {
